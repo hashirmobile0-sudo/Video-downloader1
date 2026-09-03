@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Downloader (Test)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Video Downloader</h1>
+    <p class="subtitle">Testing tool — validates a URL with yt-dlp</p>
+
+    <!-- Input box for the video URL -->
+    <input type="text" id="videoUrl" placeholder="Paste video URL here..." />
+
+    <!-- Required confirmation: only download videos you own or are permitted to -->
+    <label class="permission-label">
+      <input type="checkbox" id="ownPermission" />
+      I own this video or have permission to download it
+    </label>
+
+    <!-- Download button -->
+    <button id="downloadBtn">Download</button>
+
+    <!-- Where we show the result message -->
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
