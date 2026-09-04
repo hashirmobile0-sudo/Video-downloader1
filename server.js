@@ -15,7 +15,7 @@ const fs = require("fs");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Folder where downloaded videos are temporarily stored
 const DOWNLOAD_DIR = path.join(__dirname, "downloads");
